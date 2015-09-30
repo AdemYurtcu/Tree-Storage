@@ -1,0 +1,27 @@
+apply plugin : 'checkstyle'
+
+dependencies{
+	checkstyle "com.puppycrawl.tools:checkstyle:6.6"
+}
+configurations {
+    checkstyle
+}
+checkstyle {
+	toolVersion = '6.6'
+	configFile = new File("config/checkstyle",'sun_checks.xml')
+	checkstyleMain.source = 'src/main/java'
+	ignoreFailures = true
+	showViolations = false
+}
+task checkstyleHtml << {
+    ant.xslt(in: checkstyleMain.reports.xml.destination,
+             style: file('config/checkstyle/checkstyle.xsl'),
+             out: new File(checkstyleMain.reports.xml.destination.parent, 'main.html'))
+}
+
+checkstyleMain.finalizedBy checkstyleHtml
+
+
+
+
+

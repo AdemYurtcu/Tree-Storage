@@ -57,3 +57,22 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+*.checkstyle
+.classpath
+*.properties
+.gradle/2.5/taskArtifacts/cache.properties.lock
+*.bin
+.settings/gradle/org.springsource.ide.eclipse.gradle.core.prefs
+*.prefs
+bin/cluster.xml
+*.project
+*.xml
+*.html
+*.css
+build/reports/tests/js/report.js
+*.idx
+build/tmp/jar/MANIFEST.MF
+*.json
+config/checkstyle/checkstyle.xsl
+*.bat
+*.lst
