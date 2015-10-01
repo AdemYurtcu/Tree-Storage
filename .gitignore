@@ -76,6 +76,7 @@ build/tmp/jar/MANIFEST.MF
 config/checkstyle/checkstyle.xsl
 *.bat
 *.lst
+<<<<<<< HEAD
 *.pump
 *.gradle
 *.java
@@ -100,3 +101,6 @@ gradle-2.5/src/internal-integ-testing/test-key-store/keyStore
 *.vcxproj
 gradle-2.5/src/internal-integ-testing/test-key-store/trustStore
 *.h
+=======
+/build/
+>>>>>>> development
