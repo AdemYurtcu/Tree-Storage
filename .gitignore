@@ -76,3 +76,4 @@ build/tmp/jar/MANIFEST.MF
 config/checkstyle/checkstyle.xsl
 *.bat
 *.lst
+/build/
