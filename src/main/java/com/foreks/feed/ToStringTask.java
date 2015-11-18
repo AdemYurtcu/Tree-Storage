@@ -9,8 +9,8 @@ import java.util.Random;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveTask;
 
-import org.gradle.MyTreeSet;
-import org.gradle.MyTreeSetImpl;
+import com.foreks.feed.MyTreeSet;
+import com.foreks.feed.MyTreeSetImpl;
 
 public class ToStringTask extends RecursiveTask<String> {
     private static final long         serialVersionUID = -8154159104987465931L;

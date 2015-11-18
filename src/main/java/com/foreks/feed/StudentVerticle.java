@@ -9,8 +9,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
-import org.gradle.MyTreeSet;
-import org.gradle.MyTreeSetImpl;
+import com.foreks.feed.MyTreeSet;
+import com.foreks.feed.MyTreeSetImpl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.foreks.feed.model.Student;
