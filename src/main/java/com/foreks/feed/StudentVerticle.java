@@ -9,9 +9,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
-import com.foreks.feed.MyTreeSet;
-import com.foreks.feed.MyTreeSetImpl;
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.foreks.feed.model.Student;
 
@@ -38,7 +35,7 @@ public class StudentVerticle extends AbstractVerticle {
         this.comparatorMap.put("comparatorByName", Comparator.comparing(Student::getName));
         this.comparatorMap.put("comparatorByLastName", Comparator.comparing(Student::getLastName));
 
-        this.comparator = this.comparatorMap.get(config().getJsonObject("Student").getString("compareMethod"));
+        this.comparator = this.comparatorMap.get("comparatorById");
     }
 
     public void size(final Message<String> m) {
